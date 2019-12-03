@@ -125,3 +125,9 @@ func (s *Service) ExtendUserSession(userSession *user.Session, r *http.Request, 
 	// finally, set the session on the responseWriter
 	return s.transport.SetSessionOnResponse(signedSessionID, userSession, w)
 }
+
+// Update session data
+func (s *Service) UpdateUserSession(userSession *user.Session) error {
+	err := s.store.SaveUserSession(userSession)
+	return err
+}

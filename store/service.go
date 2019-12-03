@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/adam-hanna/sessions/user"
-	"github.com/garyburd/redigo/redis"
+	"github.com/gomodule/redigo/redis"
 )
 
 const (

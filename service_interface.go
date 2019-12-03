@@ -12,4 +12,5 @@ type ServiceInterface interface {
 	ClearUserSession(userSession *user.Session, w http.ResponseWriter) error
 	GetUserSession(r *http.Request) (*user.Session, error)
 	ExtendUserSession(userSession *user.Session, r *http.Request, w http.ResponseWriter) error
+	UpdateUserSession(userSession *user.Session) error
 }
