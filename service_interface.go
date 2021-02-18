@@ -3,7 +3,7 @@ package sessions
 import (
 	"net/http"
 
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/user"
 )
 
 // ServiceInterface defines the methods performed by the session service

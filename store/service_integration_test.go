@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/user"
 	"github.com/garyburd/redigo/redis"
 )
 

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/user"
 	"github.com/gomodule/redigo/redis"
 )
 
@@ -58,7 +58,7 @@ func (s *Service) SaveUserSession(userSession *user.Session) error {
 	c := s.Pool.Get()
 	defer c.Close()
 
-	// note @adam-hanna: should I pipeline these requests?
+	// note @Lioric: should I pipeline these requests?
 	if _, err := c.Do("HMSET", userSession.ID, "UserID", userSession.UserID, "JSON", userSession.JSON, "ExpiresAtSeconds", userSession.ExpiresAt.Unix()); err != nil {
 		return err
 	}
@@ -94,7 +94,7 @@ func (s *Service) FetchValidUserSession(sessionID string) (*user.Session, error)
 	c := s.Pool.Get()
 	defer c.Close()
 
-	// note @adam-hanna: should I pipeline these requests?
+	// note @Lioric: should I pipeline these requests?
 	// check if the key exists
 	exists, err := redis.Bool(c.Do("EXISTS", sessionID))
 	if err != nil {

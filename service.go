@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/adam-hanna/sessions/auth"
-	"github.com/adam-hanna/sessions/store"
-	"github.com/adam-hanna/sessions/transport"
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/auth"
+	"github.com/Lioric/sessions/store"
+	"github.com/Lioric/sessions/transport"
+	"github.com/Lioric/sessions/user"
 )
 
 const (

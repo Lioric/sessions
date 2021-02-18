@@ -3,7 +3,7 @@ package transport
 import (
 	"net/http"
 
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/user"
 )
 
 // ServiceInterface defines the methods performed by the transport service

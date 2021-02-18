@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/user"
 )
 
 // ServiceInterface defines the behavior of the session store

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/adam-hanna/sessions/user"
+	"github.com/Lioric/sessions/user"
 )
 
 const (
